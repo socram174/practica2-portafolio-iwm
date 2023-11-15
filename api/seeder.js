@@ -6,7 +6,7 @@ const seed = async () =>{
 
 const info = {
     name: "Marcos Silva",
-    email: "marcos.sivla@alumnos.ucn.cl",
+    email: "marcos.silva@alumnos.ucn.cl",
     city: "Santiago de Chile",
     year: 2023,
     description: "Soy estudiante de Ing. civil en computación e informatica de la Universidad Catolica del Norte en Antofagasta y me insteresa el desarrollo web",

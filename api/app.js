@@ -1,13 +1,16 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import { User } from './User.js';
 
 const PORT = 3000;
 const app = express();
 
+app.use(cors());
+
 app.get('/api/profile',async (req, res) => {
 
-    const users = await User.find();
+    const users = await User.find({email: "marcos.silva@alumnos.ucn.cl"});
 
     res.status(200).send(users);
 });
