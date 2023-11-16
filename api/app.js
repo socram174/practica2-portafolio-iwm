@@ -10,14 +10,14 @@ app.use(cors());
 
 app.get('/api/profile',async (req, res) => {
 
-    const users = await User.find({email: "marcos.silva@alumnos.ucn.cl"});
+    const user = await User.findOne({email: "marcos.silva@alumnos.ucn.cl"});
 
-    res.status(200).send(users);
+    res.status(200).send(user);
 });
 
 
 mongoose.connect('mongodb+srv://marcos:marcos@cluster0.7ynbwt5.mongodb.net/Portafolio?retryWrites=true&w=majority').then(()=>{
     app.listen(PORT, () => {
-        console.log(`App port ${PORT}`)
+        console.log(`Listening on: http://localhost:${PORT}`)
       })
 });

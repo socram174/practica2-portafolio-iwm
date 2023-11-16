@@ -14,22 +14,22 @@ const info = {
         {
             title: "React",
             description: "He ganado algo de experiencia en react gracias a proyectos personales y de la universidad.",
-            path: "./react.svg"
+            path: "/images/react.svg"
         },
         {
             title: "Nodejs/express",
             description: "Este es el unico framework de backend que he utilizado hasta el momento.",
-            path: "./expressjs.svg"
+            path: "/images/expressjs.svg"
         },
         {
             title: "MongoDB",
-            description: "Es la base de datos que mas he usado despues de mysql. He almacenar datos desde codigo hecho en javascript como codigo hecho en python.",
-            path: "./mongodb.svg"
+            description: "Es la base de datos que mas he usado despues de mysql. Para almacenar datos desde codigo hecho en javascript como codigo hecho en python para un scraper.",
+            path: "/images/mongodb.svg"
         },
         {
             title: "Python",
             description: "Tengo algo de experiencia haciendo web scraping para luego esa informacion guardarla en mongodb o mysql.",
-            path: "./python.svg"
+            path: "/images/python.svg"
         }
     ],
     hobbies: [
@@ -39,19 +39,19 @@ const info = {
             activities: [
                 {
                     title: "God of War",
-                    path: "./GOW.webp"
+                    path: "/images/GOW.webp"
                 },
                 {
                     title: "Fortnite",
-                    path: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png"
+                    path: "/images/fortnite.png"
                 },
                 {
                     title: "Destiny 2",
-                    path: "./icons/Destiny2/icons8-destiny-2-100.svg"
+                    path: "/icons/Destiny2/icons8-destiny-2-100.svg"
                 },
                 {
                     title: "Warframe",
-                    path: "./icons/Warframe/icons8-warframe-96.svg"
+                    path: "/icons/Warframe/icons8-warframe-96.svg"
                 }
             ]
         }
