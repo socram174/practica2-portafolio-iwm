@@ -1,7 +1,7 @@
 const Skills = ({ skills }) => {
   return (
     <>
-      <div className="gap-4 md:grid md:grid-cols-2 xl:grid-cols-3 m-2">
+      <div className="gap-4 md:grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 m-2">
         {skills.map((skill) => {
           return (
             <div className="p-2 border-2 rounded-lg flex flex-col items-center hover:ring-4 hover:ring-cyan-400 ring-offset-4">
