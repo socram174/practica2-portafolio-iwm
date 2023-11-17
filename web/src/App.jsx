@@ -29,14 +29,20 @@ function App() {
 
   return (
     <>
-    <div className="flex flex-col md:flex-row h-screen gap-1 p-2 bg-gradient-to-r from-black to-black">
-      <div className="w-full md:w-1/2 border-2 border-green-500 rounded-md flex justify-center items-center shadow-lg">
+    <div className="flex flex-col md:flex-row h-screen gap-1 p-2 bg-gradient-to-r from-cyan-400 to-lime-200 h-auto">
+      <div className="w-full md:w-1/2 rounded-md flex justify-center items-center shadow-lg">
         <PersonalCard name={user.name} email={user.email} description={user.description} year={user.year} />
       </div>
-      <div className="w-full md:w-1/2 border-2  rounded-md bg-white p-4">
+    <div className="flex flex-col w-full md:w-1/2">
+      <div className="w-full border-2  rounded-md bg-white p-4">
         <h2 className="font-semibold text-5xl">Habilidades</h2>
         <Skills skills={user.skills} />
       </div>
+      <div className="w-full border-2  rounded-md bg-white p-4">
+        <h2 className="font-semibold text-5xl">Hobbies</h2>
+        <Hobbies hobbies={user.hobbies} />
+      </div>
+    </div>
 
     </div>
     </>

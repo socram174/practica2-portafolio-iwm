@@ -1,20 +1,36 @@
+const Hobbies = ({ hobbies }) => {
+  console.table(hobbies);
 
-const Hobbies = ({hobbies}) => {
+  if (!hobbies) {
+    return <p>No hobbies available</p>;
+  }
 
-    console.table(hobbies);
-
-    if (!hobbies) {
-        return <p>No hobbies available</p>;
-    }
-    
-    return (
-        <>
-            <h1>Hobbies</h1>
-            {hobbies.map(hobby => <li key={hobby}>{hobby.title}</li>)}
-
-
-        </>
-    )
-}
+  return (
+    <div className="m-2">
+      {hobbies.map((hobbie) => {
+        return (
+          <div className="p-2 border-2 rounded-lg flex flex-col items-center">
+            <h2 className="text-center font-bold text-2xl">{hobbie.title}</h2>
+            <p>{hobbie.description}</p>
+            <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
+              {hobbie.activities.map((activity) => {
+                return (
+                  <div className="text-center">
+                    <img
+                      className="object-scale-down h-48 w-28"
+                      src={activity.path}
+                      alt=""
+                    />
+                    <h3>{activity.title}</h3>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Hobbies;
