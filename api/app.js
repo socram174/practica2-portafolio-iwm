@@ -4,6 +4,7 @@ import cors from 'cors';
 import { User } from './User.js';
 
 const PORT = 3000;
+const MONGO_URL = "mongodb+srv://marcos:marcos@cluster0.7ynbwt5.mongodb.net/Portafolio?retryWrites=true&w=majority";
 const app = express();
 
 app.use(cors());
@@ -16,7 +17,7 @@ app.get('/api/profile',async (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://marcos:marcos@cluster0.7ynbwt5.mongodb.net/Portafolio?retryWrites=true&w=majority').then(()=>{
+mongoose.connect(MONGO_URL).then(()=>{
     app.listen(PORT, () => {
         console.log(`Listening on: http://localhost:${PORT}`)
       })
