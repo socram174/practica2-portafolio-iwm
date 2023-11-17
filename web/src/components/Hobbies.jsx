@@ -17,7 +17,7 @@ const Hobbies = ({ hobbies }) => {
                 return (
                   <div className="text-center">
                     <img
-                      className="object-scale-down h-48 w-28"
+                      className="object-scale-down h-72 w-52"
                       src={activity.path}
                       alt=""
                     />
