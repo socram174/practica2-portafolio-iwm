@@ -59,6 +59,9 @@ const info = {
 
 }
 
+//Delete every user
+await User.deleteMany({});
+
 await User.create(info);
 
 await mongoose.connection.close();
