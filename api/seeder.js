@@ -65,6 +65,8 @@ await User.deleteMany({});
 await User.create(info);
 
 await mongoose.connection.close();
+
+console.log("Database seeded!");
 }
 
 seed();

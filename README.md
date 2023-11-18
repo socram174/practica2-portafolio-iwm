@@ -39,6 +39,11 @@ Desde la raíz ingresar a la carpeta api con el comando:
  npm install 
 ```
 
+#### Correr el seeder de la base de datos:
+```bash
+ npm run seed
+```
+
 #### Para iniciar el servidor:
 
 ```bash
